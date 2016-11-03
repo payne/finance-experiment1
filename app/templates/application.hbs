@@ -3,3 +3,12 @@ This is application.hbs
 <p>
 myNumber is {{myNumber}}
 </p>
+
+<ol>
+  <li>Value of cashflow is {{cashFlow}}</li>
+<li>{{input name=cashFlow}}</li>
+</ol>
+
+<p>
+  {{future-value rate=0.5 cashFlow=1000 numberOfPeriods=12}}
+</p>

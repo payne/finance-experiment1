@@ -1,3 +1,9 @@
+import Ember from 'ember';
+import marked from 'npm:financejs';
+
 export default Ember.Controller.extend({
-  myNumber: 42.42
+  rate:0,
+  cashFlow:'fun',
+  numberOfPeriods:1,
+  myNumber: 42.43
 });
