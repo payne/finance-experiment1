@@ -4,11 +4,14 @@ This is application.hbs
 myNumber is {{myNumber}}
 </p>
 
+<p>These two way data bindings work.</p>
 <ol>
-  <li>Value of cashflow is {{cashFlow}}</li>
-<li>{{input name=cashFlow}}</li>
+<li>{{input value=rate}}</li>
+<li>{{input value=cashFlow}}</li>
+<li>{{input value=numberOfPeriods}}</li>
 </ol>
 
+<p>You can see them update in this future-value component.  But the computed fv does not update.</p>
 <p>
-  {{future-value rate=0.5 cashFlow=1000 numberOfPeriods=12}}
+  {{future-value rate=rate cashFlow=cashFlow numberOfPeriods=numberOfPeriods}}
 </p>

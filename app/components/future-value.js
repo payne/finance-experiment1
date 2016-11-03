@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   cashFlow:1,
   numberOfPeriods:1,
   fv: Ember.computed(function() {
-    var finance = new Finance();
+    var finance = new Finance(); // how to put this in a constructor?
     let rate = this.get('rate');
     let cashFlow = this.get('cashFlow');
     let numberOfPeriods = this.get('numberOfPeriods');
