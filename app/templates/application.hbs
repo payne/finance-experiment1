@@ -6,12 +6,15 @@ myNumber is {{myNumber}}
 
 <p>These two way data bindings work.</p>
 <ol>
-<li>{{input value=rate}}</li>
-<li>{{input value=cashFlow}}</li>
-<li>{{input value=numberOfPeriods}}</li>
+<li>{{input value=input_rate}}</li>
+<li>{{input value=input_cashFlow}}</li>
+<li>{{input value=input_numberOfPeriods}}</li>
 </ol>
 
 <p>You can see them update in this future-value component.  But the computed fv does not update.</p>
 <p>
-  {{future-value rate=rate cashFlow=cashFlow numberOfPeriods=numberOfPeriods}}
+  {{future-value rate=input_rate cashFlow=input_cashFlow numberOfPeriods=input_numberOfPeriods}}
 </p>
+<p>The source of
+  <a href="https://github.com/payne/finance-experiment1/blob/master/app/components/future-value.js">my future-value component is on github here</a>.
+    Please give me some clues?</p>
