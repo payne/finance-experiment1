@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   rate:0,
   cashFlow:1,
   numberOfPeriods:1,
-  fv: Ember.computed(function() {
+  fv: Ember.computed('rate','cashFlow','numberOfPeriods',function() {
     // Question!  Why does this not update when the others do?
     var finance = new Finance(); // how to put this in a constructor?
     let rate = this.get('rate');
